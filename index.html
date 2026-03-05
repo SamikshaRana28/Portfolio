@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Name | Portfolio</title>
+    <style>
+    body {
+
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(to bottom, #000000, #020024, #090979, #000000);
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(to bottom,#000000,#020024,#090979,#000000);
+        color:white;
+        position:relative;
+        overflow-x:hidden;
+    
+    }
+    .navbar{
+    background:#000;
+    padding:15px;
+    text-align:center;
+}
+.navbar a{
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.navbar a:hover{
+    text-decoration:underline;
+}
+
+    .head img{
+    width:100%;
+    height:300px;
+    position:relative;
+    z-index:5;
+    margin-left:10px;
+}
+.photo img{
+    height:230px ; 
+    width:180px; 
+    position:absolute;
+    z-index:10;
+    border-radius:150px;
+    border:4px solid white;
+    top:250px;        
+    left:10%;
+    
+}
+
+    .container {
+        width:80%;
+        margin:auto;
+    }
+
+    .one {
+        text-align: center;
+        padding: 60px 0;
+        position:relative;
+    }
+
+    .one h1 {
+        font-size: 52px;
+        margin-bottom: 10px;
+    }
+
+    .one p {
+        font-size: 40px;
+        color: #666;
+    }
+
+    .two {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        border-bottom: 2px double white;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .skills img:hover {
+        display: inline-block;
+        transform: scale(1.2);
+        transition: 1s;
+
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .contact a {
+        color: #000;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #000;
+        color: #fff;
+    }
+ 
+.wheel {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    perspective: 1000px;
+    margin-top: 40px;
+}
+
+
+.card {
+    width: 250px;
+    height: 300px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-back {
+    background: linear-gradient(135deg, #ffffff, #e6f0ff);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes twinkle{
+0%{opacity:0.3;}
+50%{opacity:0.8;}
+100%{opacity:0.3;}
+}
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 2px, transparent 2px);
+
+background-size:120px 120px, 200px 200px, 300px 300px;
+
+animation: twinkle 6s infinite linear;
+
+opacity:0.7;
+z-index:-1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</div>
+    <div class="one">
+        <div class="head">
+                    <img src="efg.png">
+                </div>
+                <div class="photo">
+                    <img src="passport_size_pic.jpeg" >
+                </div>
+        <br><br>
+        <h1>SAMIKSHA RANA</h1>
+        <p>SIH 2025 Finalist <b>|</b> AI & Web Development Enthusiast <b>|</b> BTech IT</p>
+        </div>
+
+    <div class="two">
+         <h2 id="about">About Me</h2>
+        <p>
+            I’m a 3rd-year B.Tech student with a growing interest in programming and development. 
+            I have hands-on experience with C, C++, and Object-Oriented Programming, and I’m familiar 
+            with Java , Python and JavaScript. I’m currently improving my knowledge of Data Structures 
+            and Algorithms and exploring how to build real-world projects using what I learn. I enjoy 
+            learning new concepts, writing clean code, and understanding how technology can solve
+             everyday problems. My goal is to gain practical experience through internships and keep 
+             improving as a learner and developer.
+        </p>
+    
+
+    
+        <h2 id="skills">Skills</h2>
+        <div class="skills">
+             <b><u><i><p>Primary skills</p></i></u></b>
+                <img src="c.png" height="100px" width="100px">
+                <img src="c++.png" height="100px" width="100px"> 
+                <img src="oops.png" height="100px" width="100px">
+                <img src="dbms.png" height="100px" width="100px"> 
+            <b><u><i></i><p>Secondary Skills</p></i></u></b>
+            <img src="java.png" height="100px" width="100px">
+            <img src="javascript.png" height="100px" width="100px">
+            <b><u><i></i><p>Tools and platform</p></i></u></b>
+            <img src="vscode.jfif" height="100px" width="100px"> 
+        </div>
+  
+   <br>
+   
+        <section>
+    <h2 id="projects">Projects</h2>
+
+
+    <div class="wheel">
+
+        <div class="card">
+            <a href="https://samiksharana28.github.io/tic-tac-toe/" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="tictactoe.png" alt="Project 1">
+                    </div>
+                    <div class="card-back">
+                        <h3>Tic Tac Toe</h3>
+                        <p>HTML | CSS | JS</p>
+                        <p>Click here to see the project</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://samiksharana28.github.io/Digital__Clock/" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="clock.png" alt="Project 2">
+                    </div>
+                    <div class="card-back">
+                        <h3>Digital clock</h3>
+                        <p>HTML | CSS | JS</p>
+                        <p>Click here to see the project</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://samiksharana28.github.io/Calculator/" target="_blank">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="image.png" alt="Project 2">
+                    </div>
+                    <div class="card-back">
+                        <h3>Calculator</h3>
+                        <p>HTML | CSS | JS</p>
+                        <p>Click here to see the project</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+    
+<br>
+   
+        <h2 id="education">EDUCATION</h2>
+        <h3>SCHOOL</h3>
+        <p>Scholars Rosary Senior Secondary School, <br>
+            Rohtak , Haryana<br>
+            CBSE Percentage: 85.8% <br>
+            Year of Completion: 2022</p>
+            <h3>COLLEGE</h3>
+        <p>Bachelor of Technology <br>
+            3rd Year (Information Technology)<br>
+            Banasthali Vidyapeeth (Rajasthan)
+            CGPA: 8.55</p>
+    
+
+    <br>
+        <h2 id="certifications">CERTIFICATIONS</h2>
+       <p>
+        <ul>
+            <li>SIH 2025 Finalist</li>
+            <li>Deloitte Technology Consulting Virtual Experience Program – The Forage</li>
+            <li>Actively practicing DSA on HackerRank and Leetcode</li>
+            <li>Also learning from Cisco Networking Academy to brush up my skills</li>
+        </ul>
+        <br>
+    <h2 id="contact">CONTACT</h2>
+        <a href="tel:+917015664543">Phn No.</a>
+        <a href="mailto:samiksharana425@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/samiksha-rana-6165142b6/">LinkedIn</a>
+        <a href="https://github.com/SamikshaRana28">GitHub</a>
+    </div>
+
+</div>
+</div>
+
+<footer>
+    &copy; SAMIKSHA RANA  <b>|</b>  SIH 2025 Finalist  <b>|</b>  AI & Web Development Enthusiast  <b>|</b>  BTech IT
+</footer>
+
+</body>
+</html>
